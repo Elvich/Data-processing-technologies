@@ -48,6 +48,7 @@ print()
 print("Задание 4")
 print()
 
+#Находим все рецепты с 0-левым временем
 zero_count = np.sum(second_column == 0)
 
 print(f"Количество рецептов с продолжительностью 0: {zero_count}")
