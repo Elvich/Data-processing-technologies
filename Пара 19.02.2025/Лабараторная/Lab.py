@@ -67,12 +67,9 @@ print("Задание 5")
 print()
 
 # Выбираем первый столбец (идентификаторы рецептов)
-recipe_ids = data[:, 0]
+uniq_rec = np.size(np.unique(data[:,1:]))
 
-# Находим уникальные значения и их количество
-unique_recipes = np.unique(recipe_ids)
-
-print(f"Количество уникальных рецептов: {len(unique_recipes)}")
+print(f"Количество уникальных рецептов: {uniq_rec}")
 
 print()
 print("Задание 6")
