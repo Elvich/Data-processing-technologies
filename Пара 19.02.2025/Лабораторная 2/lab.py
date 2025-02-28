@@ -1,0 +1,1 @@
+print("Hello laba number 2!")
