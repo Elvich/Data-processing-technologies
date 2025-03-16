@@ -9,7 +9,7 @@ data = np.loadtxt('minutes_n_ingredients.csv', delimiter=',', dtype=np.int32, sk
 print("Первые 5 строк массива:")
 print(data[:5])
 
-print()
+print("-"*50)
 print("Задание 2")
 print()
 # Извлечение второго и третьего столбцов (все столбцы, кроме первого)
@@ -27,7 +27,7 @@ print("Минимумы:", min_values)
 print("Максимумы:", max_values)
 print("Медианы:", median_values)
 
-print()
+print("-"*50)
 print("Задание 3")
 print()
 
@@ -44,7 +44,7 @@ data_minimum_second_column[:,1] = np.minimum(data_minimum_second_column[:,1], q_
 print("Данные с ограничением родолжительности выполнения рецепта: ")
 print(data_minimum_second_column)
 
-print()
+print("-"*50)
 print("Задание 4")
 print()
 
@@ -62,7 +62,7 @@ print("Пример на 693 строке:")
 print(data[691])
 print(data_four[691])
 
-print()
+print("-"*50)
 print("Задание 5")
 print()
 
@@ -71,7 +71,7 @@ uniq_rec = np.size(np.unique(data[:,1:]))
 
 print(f"Количество уникальных рецептов: {uniq_rec}")
 
-print()
+print("-"*50)
 print("Задание 6")
 print()
 
@@ -80,7 +80,7 @@ print(f"Количество уникальных ингедиентов: {len(u
 print("Ингредиенты:")
 print(unique_ingredients)
 
-print()
+print("-"*50)
 print("Задание 7")
 print()
 
@@ -93,7 +93,7 @@ filtred_data = data[recipe_ingredients <= 5]
 print("Отфильтрованные данные: ")
 print(filtred_data)
 
-print()
+print("-"*50)
 print("Задание 8")
 print()
 
@@ -110,7 +110,7 @@ max_average = np.nanmax(average_ingredients_per_minute)
 
 print(f"Максимальное среднее количество ингредиентов на минуту: {max_average}")
 
-print()
+print("-"*50)
 print("Задание 9")
 print()
 
@@ -125,7 +125,7 @@ average_ingredients = np.mean(top_100_recipes[:, 2])
 
 print(f"Среднее количество ингредиентов для топ-100 рецептов: {average_ingredients}")
 
-print()
+print("-"*50)
 print("Задание 10")
 print()
 
@@ -138,7 +138,7 @@ random_recipes = data[random_indices]
 print("Информация о 10 случайных рецептах:")
 print(random_recipes)
 
-print()
+print("-"*50)
 print("Задание 11")
 print()
 
@@ -159,7 +159,7 @@ percentage_below_mean = (count_below_mean / total_recipes) * 100
 print(f"Среднее количество ингредиентов: {mean_ingredients:.2f}")
 print(f"Процент рецептов с количеством ингредиентов меньше среднего: {percentage_below_mean:.2f}%")
 
-print()
+print("-"*50)
 print("Задание 12")
 print()
 
@@ -180,13 +180,13 @@ data_with_simple = np.hstack((data, simple_column[:, np.newaxis]))
 print("Обновленный датасет с дополнительным столбцом:")
 print(data_with_simple)
 
-print()
+print("-"*50)
 print("Задание 13")
 print()
 
 print(f"Процент 'простых' рецептов: {np.sum(simple_column)/len(simple_column) * 100}%")
 
-print()
+print("-"*50)
 print("Задание 14")
 print()
 
